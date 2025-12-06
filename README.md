@@ -1,35 +1,26 @@
-# Student-Attendance-System-Using-QR-Code
-Made an Java Servlet Pages To Scan and Mark Attendance for students.
+# Student Attendance System Using QR Code
 
+A web-based application designed to automate student attendance tracking using QR and barcode scanning. Built with Java, JSP, Servlets, and MySQL, this system allows students to mark attendance digitally and provides administrators with easy access to attendance records through a modern, responsive interface.
 
-A web-based Student Attendance System built using Java, JSP, and MySQL. It allows students to register, mark attendance (via QR/barcode), and enables administrators to view records—all in a dynamic, modern UI.
+## Features
 
-**Features**
+- **Student Registration:** Easily add new students with unique IDs and details while preventing duplicate entries.  
+- **Database Integration:** MySQL database for reliable storage and retrieval of student and attendance data.  
+- **QR/Barcode Attendance:** Mark attendance using QR codes or barcodes, with safeguards against duplicate entries for the same day.  
+- **Attendance Records:** View and filter detailed attendance history, including student ID, name, and timestamp.  
+- **Responsive UI:** User-friendly interface with custom CSS for smooth navigation across all devices.
 
+## Project Files
 
-**->Student Registration**: Register students with unique details and prevent duplicate records.
+| File Name          | Description                                         |
+|------------------- |-----------------------------------------------------|
+| `addStudent.jsp`    | Page for registering new students.                 |
+| `markAttendance.jsp`| Page for marking attendance using QR/Barcode.      |
+| `viewRecords.jsp`   | Page to view detailed attendance records.          |
+| `database.jsp`      | Contains database connection settings.             |
+| `styles.css`        | Custom CSS for styling the application interface. |
 
-**->Database Integration**: Uses MySQL for storage and retrieval of student and attendance records.
-
-**->Attendance Marking**: QR/Barcode-based attendance with duplicate prevention for each day.
-
-**->Attendance Records**: View attendance history including timestamp, student ID, and name.
-
-**->Responsive UI**: Stylish, accessible design using custom CSS for easy navigation.
-
-
-**File Overview**
-
-| File Name          | Purpose                                               |
-|--------------------|-------------------------------------------------------|
-| addStudent.jsp     | Registers new students, inserts them to DB.           |
-| markAttendance.jsp | Marks attendance for students (QR/Barcode supported). |
-| viewRecords.jsp    | Displays detailed attendance records.                 |
-| database.jsp       | Manages DB connection parameters.                     |
-| styles.css         | Custom dark theme styling for UI.                     |
-
-
-**Technologies Used**
+## Technologies Used
 
 -> Java, JSP, Servlets
 
