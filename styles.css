@@ -1,0 +1,201 @@
+/* Dark Dynamic Theme */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #1db954, #14833b);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.nav-tab {
+    padding: 15px 30px;
+    background: #2c2c2c;
+    border: none;
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+    text-decoration: none;
+    color: #e0e0e0;
+}
+
+.nav-tab:hover {
+    background: #333;
+    color: #1db954;
+}
+
+.nav-tab.active {
+    background: #1db954;
+    color: #fff;
+}
+
+.tab-content {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+input[type="text"], input[type="email"], input[type="date"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #2a2a2a;
+    color: #fff;
+    transition: border 0.3s, background 0.3s;
+}
+
+input:focus, select:focus {
+    border: 1px solid #1db954;
+    background: #1b1b1b;
+    outline: none;
+}
+
+button {
+    background: #1db954;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #14833b;
+    transform: scale(1.05);
+}
+
+.message {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.success {
+    background-color: rgba(40, 167, 69, 0.2);
+    color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.error {
+    background-color: rgba(220, 53, 69, 0.2);
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.student-list {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #1e1e1e;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background: #2a2a2a;
+    color: #1db954;
+}
+
+tr:hover {
+    background: #2f2f2f;
+}
+
+.qr-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.qr-image {
+    max-width: 200px;
+    border: 1px solid #333;
+    padding: 10px;
+    background: #2a2a2a;
+    border-radius: 8px;
+}
+
+.attendance-scanner {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#video {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #333;
+    background: #1a1a1a;
+    border-radius: 8px;
+}
+
+.filters {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .nav-tabs {
+        flex-direction: column;
+    }
+}
